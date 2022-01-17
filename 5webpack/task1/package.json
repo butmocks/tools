@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:scripts": "webpack --mode=development",
+    "build:scripts": "webpack --mode=production",
     "watch:scripts": "webpack --mode=development --devtool eval-source-maps -w"
   },
   "keywords": [],
