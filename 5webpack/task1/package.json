@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:scripts": "webpack ./src/my-index.js --mode=production babel ./src --out-dir=./dist",
-    "watch:scripts": "webpack ./src/my-index.js --mode=development --devtool eval-source-maps -w"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:scripts": "webpack --mode=production",
+    "watch:scripts": "webpack --mode=development --devtool eval-source-maps -w"
   },
   "keywords": [],
   "author": "",
