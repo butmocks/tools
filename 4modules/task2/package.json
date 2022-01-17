@@ -1,5 +1,5 @@
 {
-  "name": "task-2",
+  "name": "task2",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,13 +9,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "@babel/cli": "^7.16.7",
-    "@babel/core": "^7.16.7"
-  },
   "dependencies": {
-    "core-js": "^3.20.2",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2"
+    "@babel/cli": "^7.16.8",
+    "core-js": "^3.20.3",
+    "react": "16.5",
+    "react-dom": "16.5"
   }
 }

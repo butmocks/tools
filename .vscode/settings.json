@@ -1,4 +1,23 @@
 {
   "editor.formatOnSave": true,
-  "editor.formatOnPaste": true
+  "editor.formatOnPaste": true,
+  "files.autoSave": "afterDelay",
+  "editor.detectIndentation": false,
+  "prettier.singleQuote": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.foldingImportsByDefault": true,
+  "workbench.colorTheme": "Default Dark+",
+  "prettier.trailingComma": "all",
+  "prettier.tabWidth": 4,
+  "git.autofetch": true,
+  "files.associations": {
+    "*.scss": "styles.css",
+    ".eslintrc.js": "javascript"
+  },
+  "workbench.statusBar.visible": true,
+  "prettier.withNodeModules": true,
+  "eslint.alwaysShowStatus": true,
+  "eslint.debug": true,
+  "editor.brketPaiacrColorization.enabled": true,
+  "editor.guides.bracketPairs": "active"
 }
