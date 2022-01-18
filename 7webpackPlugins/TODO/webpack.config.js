@@ -10,6 +10,10 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /.js$/,
+        use: ['babel-loader']
+      },
+      {
         test: /\.s?css$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
       },
@@ -30,6 +34,8 @@ module.exports = {
     ],
   },
   plugins: [
+    new webpack.ProgressPlugin(),
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: './src/index.html',
     }),
