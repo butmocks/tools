@@ -49,6 +49,10 @@ module.exports = (env, argv) => {
         template: './src/index.html',
       }),
     ],
+    devServer: {
+      hot: true,
+      port: 9000
+    },
   };
 
   if (isProduction) {
