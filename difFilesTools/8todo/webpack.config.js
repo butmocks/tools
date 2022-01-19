@@ -3,7 +3,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const webpack = require('webpack');
 
-module.exports = (env, argv) => {
+module.exports = () => {
   const isProduction = argv.mode === 'production';
   const config = {
     entry: './src/index.js',
@@ -57,5 +57,5 @@ module.exports = (env, argv) => {
     }));
   }
 
-  return config
+  return config;
 };
