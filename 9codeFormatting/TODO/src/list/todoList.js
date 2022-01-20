@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 import { onCreateTask } from './createTask.js';
 import { onCloseBtn } from './deleteTask.js';
 import { onToggleTask } from './updateTask.js';

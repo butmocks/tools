@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 import { renderTasks } from './renderer.js';
 import { setItem } from './storage.js';
 import { createTask, getTasksList } from './tasksGateway.js';
@@ -21,7 +22,7 @@ export const onCreateTask = () => {
 
   createTask(newTask)
     .then(() => getTasksList())
-    .then(newTasksList => {
+    .then((newTasksList) => {
       setItem('tasksList', newTasksList);
       renderTasks();
     });

@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 import { getItem } from './storage.js';
 import './list.scss';
 

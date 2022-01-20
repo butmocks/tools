@@ -1,8 +1,9 @@
+/* eslint-disable import/extensions */
 import { renderTasks } from './renderer.js';
 import { deleteTask, getTasksList } from './tasksGateway.js';
 import { setItem } from './storage.js';
 
-export const onCloseBtn = e => {
+export const onCloseBtn = (e) => {
   const isCloseBtn = e.target.classList.contains('list-item__delete-btn');
   if (!isCloseBtn) {
     return;
@@ -12,7 +13,7 @@ export const onCloseBtn = e => {
   const taskId = elem.dataset.id;
   deleteTask(taskId)
     .then(() => getTasksList())
-    .then(newTasksList => {
+    .then((newTasksList) => {
       setItem('tasksList', newTasksList);
       renderTasks();
     });

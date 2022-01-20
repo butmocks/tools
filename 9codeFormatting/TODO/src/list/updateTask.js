@@ -1,8 +1,9 @@
+/* eslint-disable import/extensions */
 import { renderTasks } from './renderer.js';
 import { getItem, setItem } from './storage.js';
 import { getTasksList, updateTask } from './tasksGateway.js';
 
-export const onToggleTask = e => {
+export const onToggleTask = (e) => {
   const isCheckbox = e.target.classList.contains('list-item__checkbox');
 
   if (!isCheckbox) {
@@ -11,7 +12,7 @@ export const onToggleTask = e => {
 
   const tasksList = getItem('tasksList');
   const taskId = e.target.dataset.id;
-  const { text, createDate } = tasksList.find(task => task.id === taskId);
+  const { text, createDate } = tasksList.find((task) => task.id === taskId);
   const done = e.target.checked;
 
   const updatedTask = {
@@ -23,7 +24,7 @@ export const onToggleTask = e => {
 
   updateTask(taskId, updatedTask)
     .then(() => getTasksList())
-    .then(newTasksList => {
+    .then((newTasksList) => {
       setItem('tasksList', newTasksList);
       renderTasks();
     });
