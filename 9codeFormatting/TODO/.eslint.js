@@ -20,7 +20,4 @@ module.exports = {
     'import/prefer-default-export': 0,
     'prefer-template': 0,
   },
-  this.parserOptions: {
-    ecmaScript:
-  }
 };
