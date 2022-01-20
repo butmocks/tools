@@ -4,7 +4,7 @@ module.exports = {
     node: true,
     browser: true,
   },
-  extends: ['airbnb-base', 'plugin:prettier/recommended'],
+  extends: 'eslint-config-airbnb-base',
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
