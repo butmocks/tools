@@ -1,4 +1,3 @@
-
 import { renderTasks } from './renderer';
 import { deleteTask, getTasksList } from './tasksGateway';
 import { setItem } from './storage';

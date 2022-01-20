@@ -1,4 +1,3 @@
-
 import { onCreateTask } from './createTask';
 import { onCloseBtn } from './deleteTask';
 import { onToggleTask } from './updateTask';
