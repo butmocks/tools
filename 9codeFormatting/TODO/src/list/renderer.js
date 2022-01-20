@@ -1,4 +1,3 @@
-
 import { getItem } from './storage.js';
 import './list.scss';
 
