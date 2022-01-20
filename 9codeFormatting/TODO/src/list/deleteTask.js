@@ -1,7 +1,7 @@
-/* eslint-disable import/extensions */
-import { renderTasks } from './renderer.js';
-import { deleteTask, getTasksList } from './tasksGateway.js';
-import { setItem } from './storage.js';
+
+import { renderTasks } from './renderer';
+import { deleteTask, getTasksList } from './tasksGateway';
+import { setItem } from './storage';
 
 export const onCloseBtn = (e) => {
   const isCloseBtn = e.target.classList.contains('list-item__delete-btn');

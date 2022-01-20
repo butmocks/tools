@@ -1,7 +1,7 @@
-/* eslint-disable import/extensions */
-import { onCreateTask } from './createTask.js';
-import { onCloseBtn } from './deleteTask.js';
-import { onToggleTask } from './updateTask.js';
+
+import { onCreateTask } from './createTask';
+import { onCloseBtn } from './deleteTask';
+import { onToggleTask } from './updateTask';
 
 export const initTodoListHandlers = () => {
   const createBtnElem = document.querySelector('.create-task-btn');
